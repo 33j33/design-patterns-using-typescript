@@ -10,7 +10,7 @@ function or a class.
 Factories make it easier to swap or extend the creation logic without changing
 client code.
 
-Adding new types of objects is simpler, as you can create new factories for
+Adding new types of similar objects is simpler, as you can modify existing factory for
 object creation.
 
 ## Key Concepts
@@ -21,3 +21,7 @@ object creation.
 3. **Factory Interface/Abstract Class**: Declares a method for creating objects.
 4. **Concrete Factory**: Implements the creation logic to instantiate specific
    products.
+
+## Further Reading
+
+https://refactoring.guru/design-patterns/factory-method
