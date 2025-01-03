@@ -6,4 +6,4 @@ Design Patterns Using Typescript
 
 Run the `pattern` deno task to execute any of the patterns from the files.
 
-` deno task pattern abstract-factory-pattern`
+`deno task pattern abstract-factory-pattern`

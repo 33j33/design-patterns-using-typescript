@@ -17,6 +17,17 @@ of related or dependent objects without specifying their concrete classes.
    know the specifics of the Concrete Factories or Products, enabling easy
    extension and scalability.
 
+#### How is it different than Factory Pattern?
+
+Factory pattern creates objects of one product type while Abstract Factory
+Pattern creates families of related objects of different product types.
+
+> Family: A family refers to a group of related products (e.g., PostgreSQL's
+> connection and CRUD operations or MongoDB's connection and CRUD operations).
+
+> Product: A product is an individual entity in the family (e.g.,
+> DatabaseConnection or CRUDOperations).
+
 ## Use Case Example: Data Access Layer
 
 Suppose you are building a data access layer for an application. This layer must
