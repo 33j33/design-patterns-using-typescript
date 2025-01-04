@@ -10,8 +10,8 @@ function or a class.
 Factories make it easier to swap or extend the creation logic without changing
 client code.
 
-Adding new types of similar objects is simpler, as you can modify existing factory for
-object creation.
+Adding new types of similar objects is simpler, as you can modify existing
+factory for object creation.
 
 ## Key Concepts
 

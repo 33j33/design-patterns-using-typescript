@@ -34,7 +34,6 @@ Suppose you are building a data access layer for an application. This layer must
 support multiple databases like PostgreSQL and MySQL. The layer needs to handle
 db connection and CRUD operators.
 
-
 ## Further Reading
 
 https://refactoring.guru/design-patterns/abstract-factory
