@@ -14,7 +14,7 @@ if (import.meta.main) {
 
     // deno-lint-ignore no-explicit-any
   } catch (error: any) {
-    console.error(`Failed to import module for pattern: ${pattern}`);
+    console.error(`Something went wrong ${pattern}`);
     console.error(error.message);
     Deno.exit(1);
   }
