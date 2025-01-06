@@ -1,5 +1,6 @@
 import { Database } from "./database.singleton.ts";
 import { getUserStore } from "./user-store.ts";
+import { getUserStore2 } from "./user-store2.ts";
 
 // Singleton Example 1 : Database Access
 const db1 = Database.connect("localhost:5432/mysql"); // connected to localhost:5432/mysql
@@ -10,7 +11,7 @@ db1.query("SELECT id, name, email FROM USERS"); // Executing query: SELECT id, n
 
 console.log(db1 === db2); // true
 
-// Singleton Example 2 : Frontend Store
+// Singleton Example 2.1 : Frontend Store
 const userStore = getUserStore();
 
 const unsubscribe = userStore.subscribe((state, prevState) => {
@@ -33,3 +34,21 @@ console.log(userStore.getState()); // { name: "Jai", email: "jai@gmail.com", isA
 unsubscribe();
 
 userStore.setState({ theme: "light" }); // doesn't log anything
+
+// Singleton Example 2.2 : Frontend Store2
+const userStore2 = getUserStore2();
+
+userStore2.subscribe((state, prevState) => {
+  console.log(
+    `Prev State: ${prevState.name} | ${prevState.email} | ${prevState.isAuthenticated}`,
+  ); // Prev State:  |  | false
+  console.log(
+    `New State: ${state.name} | ${state.email} | ${state.isAuthenticated}`,
+  ); // New State: Saorse Ronan | ronan@gmail.com | true
+});
+
+userStore2.setState({
+  name: "Saorse Ronan",
+  email: "ronan@gmail.com",
+  isAuthenticated: true,
+});
