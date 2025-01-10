@@ -1,11 +1,6 @@
 import { MysqlFactory } from "./mysql.factory.ts";
 import { PostgresFactory } from "./postgresql.factory.ts";
-import {
-  DatabaseConnection,
-  DatabaseFactory,
-  DatabaseOperations,
-  TData,
-} from "./types.ts";
+import { DatabaseConnection, DatabaseFactory, DatabaseOperations, TData } from "./types.ts";
 
 class DataAccessLayer {
   private conn: DatabaseConnection;

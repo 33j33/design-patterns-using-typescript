@@ -12,11 +12,5 @@ export interface IStripe {
   chargeCard(
     cc: string,
     amount: number,
-  ): Promise<
-    {
-      status: "success" | "failed" | "pending";
-      chargeId: string;
-      createdAt: string;
-    }
-  >;
+  ): Promise<{ status: "success" | "failed" | "pending"; chargeId: string; createdAt: string }>;
 }
