@@ -20,3 +20,4 @@ Run the `pattern` deno task to execute any of the patterns from the files.
 2. **Structural** 
     1. [**Adapter Pattern**](adapter-pattern/README.md):
     2. [**Bridge Pattern**](bridge-pattern/README.md):
+    3. [**Composite Pattern**](composite-pattern/README.md): 
