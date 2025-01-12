@@ -27,3 +27,9 @@ This pattern is particularly useful when you need to support multiple platforms 
 ## Further Reading
 
 https://refactoring.guru/design-patterns/bridge
+
+### Difference Between Bridge and Adapter 
+
+Bridge focuses on separating abstraction from implementation to allow both to evolve independently. It's used when you anticipate multiple variations of both abstractions and implementations. For example, React Native uses bridge pattern to maintain consistent component APIs while allowing platform-specific rendering implementations.
+
+Adapter focuses on making existing incompatible interfaces work together. It's used when integrating legacy systems or third-party components. For example, database ORMs often use adapters to make different database APIs conform to a single interface, or how polyfills adapt modern JavaScript APIs to work in older browsers.
