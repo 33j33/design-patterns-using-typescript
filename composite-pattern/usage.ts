@@ -31,3 +31,14 @@ root.print(" ");
         📄 sidney.jpeg (4028 KB)
         📄 cat.png (3002 KB)
  */
+
+
+root.remove(docs)
+
+root.print(" ")
+/**
+ 📁 root/  (7030 KB)
+  📁 pics/  (7030 KB)
+   📄 sidney.jpeg (4028 KB)
+   📄 cat.png (3002 KB)
+ */

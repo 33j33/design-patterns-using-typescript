@@ -3,7 +3,7 @@
 The Adapter Pattern is a structural design pattern used to make two incompatible
 interfaces or objects work together. An adapter wraps one of the objects to hide
 the complexity of conversion happening behind the scenes. The wrapped object
-isn’t even aware of the adapter.
+isn’t aware of the adapter.
 
 Think of an adapter as a plug converter that allows a device with a US plug to
 work with a European socket. Popular Usage in Software
