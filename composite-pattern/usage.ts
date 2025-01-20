@@ -32,10 +32,9 @@ root.print(" ");
         📄 cat.png (3002 KB)
  */
 
+root.remove(docs);
 
-root.remove(docs)
-
-root.print(" ")
+root.print(" ");
 /**
  📁 root/  (7030 KB)
   📁 pics/  (7030 KB)

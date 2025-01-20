@@ -21,6 +21,8 @@ https://blog.logrocket.com/practical-guide-typescript-decorators/
 
 https://refactoring.guru/design-patterns/decorator
 
+https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#decorators
+
 ## Differences with other patterns
 
 1. Need to make incompatible things work together? Use Adapter
