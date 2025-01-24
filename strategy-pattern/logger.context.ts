@@ -1,5 +1,7 @@
 import { logStrategy } from "./types.ts";
 
+// Context Class
+// It should work with all strategies via the strategy interface.
 export class Logger {
   strategies: logStrategy[] = [];
   level: string = "info";

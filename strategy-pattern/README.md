@@ -16,3 +16,8 @@ It is often used to isolate the business logic of a class from the implementatio
 1. Payment Processing: Selecting different payment gateways (PayPal, Stripe, etc.).
 2. Authentication Mechanisms: Choosing between OAuth, JWT, or basic authentication (Passportjs).
 3. Logging Mechanism: Dynamically choosing file-based logging, console logging, or cloud-based logging (Winston).
+
+
+## Further Reading 
+
+https://refactoring.guru/design-patterns/strategy

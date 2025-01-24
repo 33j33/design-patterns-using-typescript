@@ -1,5 +1,6 @@
 import { logStrategy } from "./types.ts";
 
+// Concrete strategies which encapsulates functioning of each strategy
 export class consoleLogger implements logStrategy {
   private levels: Record<string, (...args: unknown[]) => void>;
   constructor() {
