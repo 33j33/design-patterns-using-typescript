@@ -21,3 +21,8 @@ Run the `pattern` deno task to execute any of the patterns from the files.
     1. [**Adapter Pattern**](adapter-pattern/README.md):
     2. [**Bridge Pattern**](bridge-pattern/README.md):
     3. [**Composite Pattern**](composite-pattern/README.md): 
+    4. [**Decorator Pattern**](decorator-pattern/README.md)
+
+3. **Behavioral**
+   1. [**Strategy Pattern**](strategy-pattern/README.md):
+   2. [**Observer Pattern**](observer-pattern/README.md):
