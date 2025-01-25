@@ -17,7 +17,7 @@ It differs with a pure pub/sub system, publishers and subscribers often don't kn
 
 Observer pattern is very widely used in modern software. You see it in most places. Redux's store subscriptions, RxJS's Observable streams, Node.js EventEmitter, WebSocket connections, DOM event listeners
 
-## Similar Patterns
+### Similar Patterns 
 
 ```js
 // Observer Pattern
@@ -32,3 +32,9 @@ eventEmitter.on("eventName", handler);
 // Listener Pattern
 element.addEventListener("click", listener);
 ```
+
+## Further Reading
+
+https://refactoring.guru/design-patterns/observer
+
+https://nodejs.org/en/learn/asynchronous-work/the-nodejs-event-emitter
