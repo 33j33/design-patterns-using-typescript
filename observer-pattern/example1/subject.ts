@@ -1,5 +1,6 @@
 import { IObserver, ISubject } from "../types.ts";
 
+// Concrete Subject
 export class Subject<T> implements ISubject<T> {
   private observers: Set<IObserver<T>>;
   name: string;

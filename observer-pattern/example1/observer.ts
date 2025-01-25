@@ -1,5 +1,6 @@
 import { IObserver } from "../types.ts";
 
+// Concrete Observer
 export class Observer<T> implements IObserver<T> {
   name: string;
   constructor(name: string) {
