@@ -16,6 +16,7 @@ if (import.meta.main) {
   } catch (error: any) {
     console.error(`Something went wrong ${pattern}`);
     console.error(error.message);
+    console.error(error);
     Deno.exit(1);
   }
 }
