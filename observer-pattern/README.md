@@ -35,6 +35,8 @@ element.addEventListener("click", listener);
 
 ## Further Reading
 
+https://www.patterns.dev/vanilla/observer-pattern
+
 https://refactoring.guru/design-patterns/observer
 
 https://nodejs.org/en/learn/asynchronous-work/the-nodejs-event-emitter
