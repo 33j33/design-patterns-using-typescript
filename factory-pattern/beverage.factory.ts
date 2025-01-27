@@ -45,11 +45,7 @@ class Juice implements Beverage {
 // -- Beverage Factory Class -- //
 
 export class BeverageFactory implements IBeverageFactory {
-  createBeverage(
-    beverage: Beverages,
-    quantity: number,
-    type?: string,
-  ): Beverage {
+  createBeverage(beverage: Beverages, quantity: number, type?: string): Beverage {
     switch (beverage) {
       case "coffee":
         if (!type) throw new Error("define a type");

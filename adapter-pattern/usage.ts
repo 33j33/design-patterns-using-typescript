@@ -6,10 +6,7 @@ const stripeService = new Stripe("myapp-4fjdnf33");
 
 const paymentAdapter = new StripeAdapter(stripeService);
 
-async function processOrderPayment(
-  processor: IPaymentProcessor,
-  data: { cc: string; amount: number; name: string },
-) {
+async function processOrderPayment(processor: IPaymentProcessor, data: { cc: string; amount: number; name: string }) {
   if (!data.amount) return;
   console.log("processing payment for " + data.name);
   await processor.processPayment(data.cc, data.amount, data.name);

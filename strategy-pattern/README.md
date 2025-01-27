@@ -1,6 +1,6 @@
 # Strategy Pattern
 
-It is a behavioral design pattern that allows us to define a family of algorithms, encapsulate each one in a separate class and select the appropriate one based on the situation.  This pattern is useful when multiple algorithms can be used for a specific task, and the choice of which one to use can be made dynamically at runtime.
+It is a behavioral design pattern that allows us to define a family of algorithms, encapsulate each one in a separate class and select the appropriate one based on the situation. This pattern is useful when multiple algorithms can be used for a specific task, and the choice of which one to use can be made dynamically at runtime.
 
 Instead of hardcoding an algorithm inside a class, we delegate the actual implementation to different strategy classes.
 It is often used to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic.
@@ -17,7 +17,6 @@ It is often used to isolate the business logic of a class from the implementatio
 2. Authentication Mechanisms: Choosing between OAuth, JWT, or basic authentication (Passportjs).
 3. Logging Mechanism: Dynamically choosing file-based logging, console logging, or cloud-based logging (Winston).
 
-
-## Further Reading 
+## Further Reading
 
 https://refactoring.guru/design-patterns/strategy

@@ -19,8 +19,6 @@ Think of it like a tree structure where both leaves (single objects) and branche
 3. **Filesystem Operations**: Representing files (Leaf) and directories (Composite).
 4. **Image Editors**: Handling shapes (Leaf) and groups of shapes (Composite).
 
-
-
 ## Further Reading
 
 https://refactoring.guru/design-patterns/composites

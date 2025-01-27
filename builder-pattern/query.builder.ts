@@ -39,10 +39,7 @@ export class QueryBuilder {
       throw new Error("SELECT and FROM clauses are mandatory.");
     }
 
-    const parts = [
-      `SELECT ${this.query.select.join(", ")}`,
-      `FROM ${this.query.from.join(", ")}`,
-    ];
+    const parts = [`SELECT ${this.query.select.join(", ")}`, `FROM ${this.query.from.join(", ")}`];
     if (this.query.joins?.length) parts.push(this.query.joins.join(" "));
     if (this.query.where?.length) {
       parts.push("WHERE " + this.query.where.join(" AND "));

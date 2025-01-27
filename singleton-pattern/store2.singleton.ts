@@ -12,7 +12,7 @@ export class Store2<T> {
   setState(newState: Partial<T>) {
     const prevState = this.state;
     this.state = { ...this.state, ...newState };
-    this.listeners.forEach((listener) => listener(this.state, prevState));
+    this.listeners.forEach(listener => listener(this.state, prevState));
   }
   getState() {
     return { ...this.state };

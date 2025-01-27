@@ -13,7 +13,7 @@ export class Directory implements IFileSystemNode {
   }
   print(indent: string): void {
     console.log(`${indent}📁 ${this.name}/  (${this.getSize()} KB)`);
-    this.children.forEach((node) => {
+    this.children.forEach(node => {
       node.print(indent + " ");
     });
   }

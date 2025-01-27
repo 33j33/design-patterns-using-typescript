@@ -1,13 +1,13 @@
 {
   "tasks": {
     "dev": "deno run --watch main.ts",
-    "pattern": "deno run --allow-read main.ts"
+    "pattern": "deno run --allow-read main.ts",
+    "fmt": "deno run -A npm:prettier --write ."
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
   },
   "fmt": {
-    "lineWidth": 100,
-    "exclude": ["**/*.md"]
+    "exclude": ["**/*"]
   }
 }

@@ -2,7 +2,6 @@
 
 The Bridge Pattern is a structural design pattern that separates an abstraction from its implementation, allowing the two to vary independently. It’s like building a bridge between two things so they can work together without being tightly coupled.
 
-
 ## Key Concepts
 
 1. **Abstraction**: The high-level interface or abstract class. Defines what needs to be done and delegates the implementation to the Implementor.
@@ -15,12 +14,11 @@ The Bridge Pattern is a structural design pattern that separates an abstraction 
 
 5. **Client**: Interacts with the Abstraction. Is decoupled from the details of the Implementor
 
-
 ## Use Cases
 
 1. **JDBC**: Database operations (abstraction) separated from specific database drivers (implementation)
 2. **React Native**: UI components (abstraction) with platform-specific renderers (implementation)
-3. **Graphics libraries**: Drawing operations (abstraction) separated from device-specific rendering (implementation) 
+3. **Graphics libraries**: Drawing operations (abstraction) separated from device-specific rendering (implementation)
 
 This pattern is particularly useful when you need to support multiple platforms or implementations while maintaining a consistent API.
 
@@ -28,7 +26,7 @@ This pattern is particularly useful when you need to support multiple platforms 
 
 https://refactoring.guru/design-patterns/bridge
 
-### Difference Between Bridge and Adapter 
+### Difference Between Bridge and Adapter
 
 Bridge focuses on separating abstraction from implementation to allow both to evolve independently. It's used when you anticipate multiple variations of both abstractions and implementations. For example, React Native uses bridge pattern to maintain consistent component APIs while allowing platform-specific rendering implementations.
 

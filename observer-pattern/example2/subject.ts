@@ -19,6 +19,6 @@ export class PriceMonitor implements ISubject<ProductPrice> {
   }
 
   notify(data: ProductPrice): void {
-    this.observers.forEach((o) => o.update(data));
+    this.observers.forEach(o => o.update(data));
   }
 }

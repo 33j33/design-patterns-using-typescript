@@ -5,12 +5,7 @@ import { RetryHandler } from "./retryHandler.ts";
 import { StripeFacade } from "./stripe.facade.ts";
 import { PaymentRequest } from "./types.ts";
 
-const stripe = new StripeFacade(
-  new PaymentValidator(),
-  new ApiClient(),
-  new RetryHandler(),
-  new StripeLogger(),
-);
+const stripe = new StripeFacade(new PaymentValidator(), new ApiClient(), new RetryHandler(), new StripeLogger());
 
 const paymentRequest: PaymentRequest = {
   amount: 9999, // $99.99

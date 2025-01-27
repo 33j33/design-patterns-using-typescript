@@ -1,10 +1,4 @@
-import {
-  DatabaseConnection,
-  DatabaseFactory,
-  DatabaseOperations,
-  TData,
-  TResource,
-} from "./types.ts";
+import { DatabaseConnection, DatabaseFactory, DatabaseOperations, TData, TResource } from "./types.ts";
 
 // -- Product Classes -- //
 

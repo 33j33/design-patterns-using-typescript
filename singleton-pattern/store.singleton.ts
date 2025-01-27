@@ -20,7 +20,7 @@ export function createStore<T>(initialState: T): Store<T> {
   const setState = (newState: Partial<T>) => {
     const prevState = state;
     state = { ...state, ...newState };
-    listeners.forEach((listener) => listener(state, prevState));
+    listeners.forEach(listener => listener(state, prevState));
   };
 
   const subscribe = (listener: Listener<T>) => {

@@ -15,12 +15,8 @@ console.log(db1 === db2); // true
 const userStore = getUserStore();
 
 const unsubscribe = userStore.subscribe((state, prevState) => {
-  console.log(
-    `Prev State: ${prevState.name} | ${prevState.email} | ${prevState.isAuthenticated}`,
-  ); // Prev State:  |  | false
-  console.log(
-    `New State: ${state.name} | ${state.email} | ${state.isAuthenticated}`,
-  ); // New State: Jai | jai@gmail.com | true
+  console.log(`Prev State: ${prevState.name} | ${prevState.email} | ${prevState.isAuthenticated}`); // Prev State:  |  | false
+  console.log(`New State: ${state.name} | ${state.email} | ${state.isAuthenticated}`); // New State: Jai | jai@gmail.com | true
 });
 
 userStore.setState({
@@ -39,12 +35,8 @@ userStore.setState({ theme: "light" }); // doesn't log anything
 const userStore2 = getUserStore2();
 
 userStore2.subscribe((state, prevState) => {
-  console.log(
-    `Prev State: ${prevState.name} | ${prevState.email} | ${prevState.isAuthenticated}`,
-  ); // Prev State:  |  | false
-  console.log(
-    `New State: ${state.name} | ${state.email} | ${state.isAuthenticated}`,
-  ); // New State: Saorse Ronan | ronan@gmail.com | true
+  console.log(`Prev State: ${prevState.name} | ${prevState.email} | ${prevState.isAuthenticated}`); // Prev State:  |  | false
+  console.log(`New State: ${state.name} | ${state.email} | ${state.isAuthenticated}`); // New State: Saorse Ronan | ronan@gmail.com | true
 });
 
 userStore2.setState({

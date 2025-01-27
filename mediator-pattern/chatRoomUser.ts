@@ -1,4 +1,4 @@
-import { Event, IMediator, IUser, Message } from "./types.ts";
+import { IMediator, IUser, Message } from "./types.ts";
 
 // Concrete Component
 export class ChatRoomUser implements IUser {
@@ -23,9 +23,7 @@ export class ChatRoomUser implements IUser {
   }
   receiveMessage(roomName: string, message: Message, sender: string): void {
     console.log(
-      `\tnotification to ${this.name}: msg from ${sender} in ${roomName} \n\t ${
-        message.content.slice(0, 120)
-      }...`,
+      `\tnotification to ${this.name}: msg from ${sender} in ${roomName} \n\t ${message.content.slice(0, 120)}...`
     );
   }
   join(roomName: string): void {

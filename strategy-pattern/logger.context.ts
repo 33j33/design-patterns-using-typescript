@@ -15,6 +15,6 @@ export class Logger {
     return this;
   }
   log(message: string, data: Record<string, unknown>, level?: string) {
-    this.strategies.forEach((s) => s.log(level || this.level, message, data));
+    this.strategies.forEach(s => s.log(level || this.level, message, data));
   }
 }

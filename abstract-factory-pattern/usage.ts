@@ -29,9 +29,8 @@ class DataAccessLayer {
 
 const databaseType = "mysql";
 
-const dal = databaseType === "mysql"
-  ? new DataAccessLayer(new MysqlFactory())
-  : new DataAccessLayer(new PostgresFactory());
+const dal =
+  databaseType === "mysql" ? new DataAccessLayer(new MysqlFactory()) : new DataAccessLayer(new PostgresFactory());
 
 dal.init();
 

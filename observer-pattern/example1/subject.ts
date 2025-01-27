@@ -15,6 +15,6 @@ export class Subject<T> implements ISubject<T> {
     this.observers.delete(observer);
   }
   notify(data: T): void {
-    this.observers.forEach((o) => o.update(data));
+    this.observers.forEach(o => o.update(data));
   }
 }

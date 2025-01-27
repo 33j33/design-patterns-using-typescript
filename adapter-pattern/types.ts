@@ -3,7 +3,7 @@ export interface IPaymentProcessor {
   processPayment(
     cc: string,
     amount: number,
-    name: string,
+    name: string
   ): Promise<{ transcationId: string; paid: boolean; timestamp: string }>;
 }
 
@@ -11,6 +11,6 @@ export interface IPaymentProcessor {
 export interface IStripe {
   chargeCard(
     cc: string,
-    amount: number,
+    amount: number
   ): Promise<{ status: "success" | "failed" | "pending"; chargeId: string; createdAt: string }>;
 }

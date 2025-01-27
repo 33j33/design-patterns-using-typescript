@@ -9,15 +9,13 @@ export class StripeFacade {
     private validator: PaymentValidator,
     private apiClient: ApiClient,
     private retryHandler: RetryHandler,
-    private logger: StripeLogger,
+    private logger: StripeLogger
   ) {}
 
   async processPayment(payment: PaymentRequest): Promise<PaymentResponse> {
     try {
       this.validator.validate(payment);
-      return await this.retryHandler.execute(
-        () => this.apiClient.charge(payment),
-      );
+      return await this.retryHandler.execute(() => this.apiClient.charge(payment));
     } catch (error) {
       this.logger.logError(error as Error);
       throw error; // Re-throw for client handling

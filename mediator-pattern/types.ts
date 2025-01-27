@@ -23,11 +23,5 @@ export interface IUser {
  */
 
 export interface IMediator {
-  notify(
-    namespace: string,
-    event: Event,
-    sender: unknown,
-    receiver?: unknown,
-    data?: unknown,
-  ): void;
+  notify(namespace: string, event: Event, sender: unknown, receiver?: unknown, data?: unknown): void;
 }

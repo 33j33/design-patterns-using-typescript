@@ -29,11 +29,7 @@ export class Notifier implements IObserver<ProductPrice> {
     if (previousPrice) {
       const diff = Math.abs(data.price - previousPrice) / previousPrice;
       if (diff >= this.PRICE_CHANGE_THRESHOLD) {
-        console.log(
-          `Users notified of price change for ${data.productId} | Discount - ${
-            Math.floor(diff * 100)
-          }%`,
-        );
+        console.log(`Users notified of price change for ${data.productId} | Discount - ${Math.floor(diff * 100)}%`);
       }
     }
     this.productMap.set(data.productId, data.price);

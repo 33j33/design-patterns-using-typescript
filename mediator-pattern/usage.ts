@@ -15,10 +15,7 @@ jane.join(learnPythonGroup.name);
 janice.join(learnPythonGroup.name);
 
 janice.sendMessage(learnPythonGroup.name, "Hi! everyone. What's the best place to learn python?");
-john.sendMessage(
-  learnPythonGroup.name,
-  "You can start with: Automate the boring stuff with Python",
-);
+john.sendMessage(learnPythonGroup.name, "You can start with: Automate the boring stuff with Python");
 
 /**
  *

@@ -1,6 +1,6 @@
 # Facade Pattern
 
-The Facade Pattern is a structural design pattern that provides a simplified, higher-level interface to a complex system of classes, libraries, or subsystems. It helps to hide the complexities behind a unified interface and easy to use API. This helps reduce coupling between client code and the underlying system. 
+The Facade Pattern is a structural design pattern that provides a simplified, higher-level interface to a complex system of classes, libraries, or subsystems. It helps to hide the complexities behind a unified interface and easy to use API. This helps reduce coupling between client code and the underlying system.
 
 ## Key Concepts
 

@@ -25,9 +25,7 @@ export class fileLogger implements logStrategy {
   }
   log(level: string, message: string, data: Record<string, unknown>): void {
     console.log(
-      `log: [${level.toLocaleUpperCase()}] ${message} | data: ${
-        JSON.stringify(data)
-      } written to file ${this.fileName}`,
+      `log: [${level.toLocaleUpperCase()}] ${message} | data: ${JSON.stringify(data)} written to file ${this.fileName}`
     );
   }
 }
@@ -39,9 +37,7 @@ export class cloudLogger implements logStrategy {
   }
   log(level: string, message: string, data: Record<string, unknown>): void {
     console.log(
-      `log: [${level.toLocaleUpperCase()}] ${message} | data: ${
-        JSON.stringify(data)
-      } written to ${this.url}`,
+      `log: [${level.toLocaleUpperCase()}] ${message} | data: ${JSON.stringify(data)} written to ${this.url}`
     );
   }
 }
