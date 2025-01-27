@@ -1,5 +1,5 @@
 import { ApiClient } from "./apiClient.ts";
-import { StripeLogger } from "./errorHandler.ts";
+import { StripeLogger } from "./stripeLogger.ts";
 import { PaymentValidator } from "./paymentValidator.ts";
 import { RetryHandler } from "./retryHandler.ts";
 import { StripeFacade } from "./stripe.facade.ts";

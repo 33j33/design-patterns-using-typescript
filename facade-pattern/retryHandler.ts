@@ -1,3 +1,4 @@
+// Mimics Stripe's automatic retries for idempotent requests (network errors, rate limits)
 export class RetryHandler {
   private readonly maxRetries = 3;
 
