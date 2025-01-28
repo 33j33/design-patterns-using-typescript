@@ -30,3 +30,20 @@ console.log(server.handleRequest(validRequest));
 
 console.log('\n--- Blocked Request ---');
 console.log(server.handleRequest(blockedRequest));
+
+/**
+
+--- Valid Request ---
+Request | GET | /api/v3/posts | 192.168.1.1
+Rate limit: 1/5
+Authentication Passed
+Response | 200
+{ status: 200, body: "OK" }
+
+--- Blocked Request ---
+Request | GET | /api/v3/posts | 192.168.1.1
+Rate limit: 2/5
+Response | 401
+{ status: 401, body: "Unauthorised: Invalid API Key" }
+
+ */
