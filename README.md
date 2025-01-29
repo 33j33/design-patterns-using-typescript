@@ -29,3 +29,4 @@ Run the `pattern` deno task to execute any of the patterns from the files.
    1. [**Strategy Pattern**](strategy-pattern/README.md):
    2. [**Observer Pattern**](observer-pattern/README.md):
    3. [**Mediator Pattern**](mediator-pattern/README.md):
+   4. [**Chain of Responsibility Pattern**](chain-of-responsibility-pattern/README.md):
