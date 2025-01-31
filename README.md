@@ -1,6 +1,9 @@
 # design-patterns-using-typescript
 
-Design Patterns Using Typescript
+This repo breaks down common design patterns using TypeScript. Instead of abstract examples, you'll find implementations that mirror real-world tools you already use. 
+
+E.g, to see how Redux enforces a single source of truth? Check out the [Singleton pattern example](singleton-pattern/store.singleton.ts) emulating state management via a basic Redux store. Curious how Express.js implements its middleware using the Chain of Responsibility Pattern? Check out this [CoR example](chain-of-responsibility-pattern/server.ts)
+
 
 ## Getting Started
 
