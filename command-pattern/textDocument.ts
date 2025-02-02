@@ -1,7 +1,7 @@
 // Receiver - Peforms the actions on the Doc
 export class TextDocument {
-  private content: string;
-  private version: number;
+  content: string;
+  version: number;
   title: string;
 
   constructor(title: string) {
