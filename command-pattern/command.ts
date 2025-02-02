@@ -24,7 +24,7 @@ export class Command implements ICommand<TextDocument> {
       }
       case "replace": {
         const { oldText, newText } = this.data as { oldText: string; newText: string };
-        doc.replace(oldText, newText);
+        this.lastInsertionIndex = doc.replace(oldText, newText);
         break;
       }
       default: {
@@ -41,12 +41,12 @@ export class Command implements ICommand<TextDocument> {
       }
       case "delete": {
         const { start } = this.data as { start: number; end: number };
-        doc.insert(this.lastDeletedText, start);
+        this.lastInsertionIndex = doc.insert(this.lastDeletedText, start);
         break;
       }
       case "replace": {
         const { oldText, newText } = this.data as { oldText: string; newText: string };
-        doc.replace(newText, oldText);
+        this.lastInsertionIndex = doc.replace(newText, oldText);
         break;
       }
       default: {

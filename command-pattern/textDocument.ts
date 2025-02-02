@@ -27,12 +27,15 @@ export class TextDocument {
     this.version++;
     return deletedText;
   }
-  replace(oldText: string, newText: string): void {
+  replace(oldText: string, newText: string): number {
     this.content = this.content.replaceAll(oldText, newText);
     this.version++;
+    return this.content.lastIndexOf(newText) + newText.length;
   }
 
   view() {
-    return `=== V${this.version} ===\n${this.content}\n==========\n`;
+    const header = `=== ${this.title} V${this.version} ===`;
+    const footer = "=".repeat(header.length);
+    return `${header}\n${this.content}\n${footer}`;
   }
 }
