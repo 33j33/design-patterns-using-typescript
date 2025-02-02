@@ -1,6 +1,3 @@
-// undo stack, redo stack
-// execute, undo, redo
-
 import { Command } from "./command.ts";
 import { TextDocument } from "./textDocument.ts";
 
