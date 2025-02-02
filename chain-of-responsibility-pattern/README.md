@@ -6,10 +6,9 @@ The Chain of Responsibility (CoR) pattern is a behavioral design pattern that al
 
 1. **Handler Interface**: Defines a method for handling requests and setting the next handler.
 2. **Concrete Handlers**: Implement specific logic to decide whether to process or forward a request.
-4. **Chaining Mechanism**: Client builds the chain and initiates the request. Handlers are linked in a specific order to form a processing pipeline.
+3. **Chaining Mechanism**: Client builds the chain and initiates the request. Handlers are linked in a specific order to form a processing pipeline.
 
 ## Use Cases
-
 
 1. HTTP Middleware (Express.js, NestJS): Authentication, authorization, validation, and logging.
 

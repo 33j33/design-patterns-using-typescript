@@ -4,8 +4,7 @@ It is a behavioral design pattern that turns a request into an object. This tran
 
 Used when you want to queue operations, schedule their execution, or execute them remotely. A command can be serialized, which means converting it to a string that can be easily written to a file or a database. You can delay and schedule command execution. you can put them in queue, log or send them over the network.
 
-Used when you want to implement undoable actions, e.g text editor. you turn your operations into a command and then push them in a stack which you can pop out to replay previous commands. 
-
+Used when you want to implement undoable actions, e.g text editor. you turn your operations into a command and then push them in a stack which you can pop out to replay previous commands.
 
 ## Key Concepts
 
@@ -23,4 +22,3 @@ Used when you want to implement undoable actions, e.g text editor. you turn your
 ## Further Reading
 
 https://refactoring.guru/design-patterns/command
-

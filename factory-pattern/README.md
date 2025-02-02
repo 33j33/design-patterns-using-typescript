@@ -24,7 +24,7 @@ factory for object creation.
 
 ## Differences with other patterns
 
-**Adapter pattern** wraps over one object. **Facade Pattern** creates a single object to represent a subsystem of multiple objects. **Flyweight Pattern** creates lots of little objects. 
+**Adapter pattern** wraps over one object. **Facade Pattern** creates a single object to represent a subsystem of multiple objects. **Flyweight Pattern** creates lots of little objects.
 
 **Facade** defines a simplified interface to a subsystem of objects. The subsystem itself is unaware of the facade. **Mediator** facilate communication between components of the system. The components only know about the mediator object and don’t communicate directly.
 
