@@ -1,8 +1,9 @@
 # design-patterns-using-typescript
 
-This repo breaks down common design patterns using TypeScript. Instead of abstract examples, you'll find implementations that mirror real-world tools you already use.
+This repo breaks down common design patterns using TypeScript. <br/>
+Instead of abstract examples, you'll find implementations that mirror real-world tools you already use.
 
-E.g, to see how Redux enforces a single source of truth? Check out the [Singleton pattern example](singleton-pattern/store.singleton.ts) emulating state management via a basic Redux store. Curious how Express.js implements its middleware using the Chain of Responsibility Pattern? Check out this [CoR example](chain-of-responsibility-pattern/server.ts)
+E.g, to see how Redux does state management? Check out the [Singleton pattern example](singleton-pattern/store.singleton.ts) that emulates a Redux store. Curious how Express.js implements its middleware using the Chain of Responsibility Pattern? Check out this [CoR example](chain-of-responsibility-pattern/server.ts)
 
 ## Getting Started
 
@@ -32,3 +33,4 @@ Run the `pattern` deno task to execute any of the patterns from the files.
    2. [**Observer Pattern**](observer-pattern/README.md):
    3. [**Mediator Pattern**](mediator-pattern/README.md):
    4. [**Chain of Responsibility Pattern**](chain-of-responsibility-pattern/README.md):
+   5. [**Command Pattern**](command-pattern/README.md):
