@@ -34,15 +34,13 @@ hello world
 hello earth
  */
 
+textEditor.save("notes.txt");
+textEditor.close();
 
-textEditor.save("notes.txt")
-textEditor.close()
+const textEditor2 = new TextEditor(); // another text editor instance loading the notes file
 
-const textEditor2 = new TextEditor() // another text editor instance loading the notes file
-
-textEditor2.load("notes.txt")
+textEditor2.load("notes.txt");
 console.log(textEditor2.view());
-
 
 textEditor2.execute([new Command("delete", { start: 0, end: 5 })]);
 console.log(textEditor2.view());
