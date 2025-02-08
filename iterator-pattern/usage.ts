@@ -1,4 +1,9 @@
 // Example 1 - Menu Iterator
+// Use Cases
+// Show hierarchy up to certain levels in Breadcrumb Navigation.
+// Limit navigation depth for screen readers
+// Create partial sitemaps with depth constraints
+// Optimize UI rendering of deep hierarchies by limiting traversal
 
 import { MenuIterator } from "./example1/menuIterator.ts";
 import { MenuItem } from "./example1/types.ts";
