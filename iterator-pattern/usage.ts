@@ -5,10 +5,10 @@
 // Create partial sitemaps with depth constraints
 // Optimize UI rendering of deep hierarchies by limiting traversal
 
-import { MenuIterator } from "./example1/menuIterator.ts";
-import { MenuItem } from "./example1/types.ts";
+import { Menu } from "./example1/menu.ts";
+import { MenuItem, MenuItemWithDepth } from "./example1/types.ts";
 
-const menu: MenuItem = {
+const menuData: MenuItem = {
   name: "Home",
   children: [
     {
@@ -26,10 +26,11 @@ const menu: MenuItem = {
   ],
 };
 
-const depthTwoIterator = new MenuIterator(menu, 2);
-const depthThreeIterator = new MenuIterator(menu, 3);
+const menu = new Menu(menuData);
+const depthTwoIterator = menu.getIterator(2);
+const depthThreeIterator = menu.getIterator(3);
 
-let result: IteratorResult<MenuItem & { depth: number }>;
+let result: IteratorResult<MenuItemWithDepth>;
 
 while (true) {
   result = depthTwoIterator.next();
@@ -42,10 +43,9 @@ while (true) {
 --Settings
 */
 
-while (true) {
-  result = depthThreeIterator.next();
-  if (result.done) break;
-  console.log("-".repeat(result.value.depth) + result.value.name);
+// Defining [Symbol.iterator]() for iterator allows native traversal using for..of
+for (const item of depthThreeIterator) {
+  console.log("-".repeat(item.depth) + item.name);
 }
 /**
 -Home
