@@ -14,7 +14,7 @@ Think of it like a tree structure where both leaves (single objects) and branche
 
 ## Use Cases
 
-1. **Frontend Frameworks**: Building UI trees with components (e.g., React's virtual DOM).
+1. **Frontend Frameworks**: Building UI trees with components (e.g., React's virtual DOM and component composition model where both leaf components and container components share the same basic interface)
 2. **Query Builders**: Representing complex database query structures.
 3. **Filesystem Operations**: Representing files (Leaf) and directories (Composite).
 4. **Image Editors**: Handling shapes (Leaf) and groups of shapes (Composite).

@@ -28,11 +28,12 @@ Pattern creates families of related objects of different product types.
 > Product: A product is an individual entity in the family (e.g.,
 > DatabaseConnection or CRUDOperations).
 
-## Use Case Example: Data Access Layer
+## Use Cases
 
-Suppose you are building a data access layer for an application. This layer must
-support multiple databases like PostgreSQL and MySQL. The layer needs to handle
-db connection and CRUD operators.
+1. Suppose you are building a data access layer for an application. This layer must
+   support multiple databases like PostgreSQL and MySQL. The layer needs to handle
+   db connection and CRUD operators.
+2. In UI development, this pattern allows you to create entire sets of components (buttons, inputs, modals) that share a consistent theme or style.
 
 ## Further Reading
 

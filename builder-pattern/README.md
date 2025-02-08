@@ -12,6 +12,8 @@ permissions, preferences, etc. It makes for better design to use builder pattern
 to create a user with specific profile instead of having muliple contructors in
 a class or optional params to create one.
 
+You need to build an API client builder that lets you configure multiple options like base URL, headers, timeout, and authentication separately before creating the final client instance.
+
 Another example would be a SQL query builder where one needs to use multiple
 clauses (WHERE, SELECT, GROUP BY, etc). This pattern provides a structured way
 to construct these queries in a type-safe, extendable, and reusable manner. One

@@ -18,6 +18,7 @@ For example, if an application has thousands of objects with some shared propert
 3. React uses the flyweight pattern in its Virtual DOM and component rendering. The reconciliation process ensures that React reuses existing DOM elements instead of creating new ones.
 4. Three.js implements instancing and shared geometry buffers to optimize rendering large numbers of 3D objects.
 5. Database connection pooling, caching query results
+6. Text editors, instead of each character object storing its own font and styling information, these properties are shared among characters with the same formatting. Similarly,
 
 ## Further Reading
 
