@@ -2,8 +2,8 @@
 
 The Iterator pattern is a behavioral design pattern that provides a standardized way to traverse through a collection of elements without exposing its underlying structure.
 
-Clients can iterate using next()/hasNext() without knowing if data comes from an array, database, or tree (abstraction) and same iterator interface works across different collections (reusability). 
-Having this pattern implemented new traversal logic (e.g., depth-first vs. breadth-first) can be added without changing the collection. 
+Clients can iterate using next()/hasNext() without knowing if data comes from an array, database, or tree (abstraction) and same iterator interface works across different collections (reusability).
+Having this pattern implemented new traversal logic (e.g., depth-first vs. breadth-first) can be added without changing the collection.
 
 ## Key Concepts
 
@@ -19,9 +19,8 @@ Having this pattern implemented new traversal logic (e.g., depth-first vs. bread
 3. Database cursors in MongoDB and PostgreSQL implement iterators to stream large result sets.
 4. Node.js's `ReadableStream` use iterator patterns for processing data chunks.
 
-## Further Reading 
+## Further Reading
 
 https://refactoring.guru/design-patterns/iterator
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators
-
