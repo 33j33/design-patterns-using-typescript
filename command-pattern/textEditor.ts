@@ -1,6 +1,7 @@
 import { Command } from "./command.ts";
 import { TextDocument } from "./textDocument.ts";
 
+// Invoker - Stores and invokes commands when needed.
 export class TextEditor {
   private doc: TextDocument;
   private undoStack: Command[];

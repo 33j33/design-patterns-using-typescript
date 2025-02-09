@@ -1,6 +1,7 @@
 import { TextDocument } from "./textDocument.ts";
 import { ICommand } from "./types.ts";
 
+// Concrete Command Creator Class
 export class Command implements ICommand<TextDocument> {
   type: string;
   data: Record<string, string | number | undefined>;
