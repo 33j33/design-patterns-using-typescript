@@ -10,6 +10,8 @@ Run the `pattern` deno task to execute any of the patterns from the files.
 
 `deno task pattern abstract-factory-pattern`
 
+_if you don't you have `deno` installed, refer to this [installation guide](https://docs.deno.com/runtime/getting_started/installation/)_
+
 ## Patterns
 
 ### 1. Creational: How objects are created
@@ -48,6 +50,8 @@ Run the `pattern` deno task to execute any of the patterns from the files.
 
 ### References
 
-- https://refactoring.guru/design-patterns
-- https://www.freecodecamp.org/news/javascript-design-patterns-explained
-- https://www.youtube.com/watch?v=tv-_1er1mWI
+1. https://refactoring.guru/design-patterns
+2. https://www.freecodecamp.org/news/javascript-design-patterns-explained
+3. https://www.patterns.dev
+4. [10 Design Patterns Explained - fireship.io](https://www.youtube.com/watch?v=tv-_1er1mWI)
+5. _and some LLM help to tidy up things_
