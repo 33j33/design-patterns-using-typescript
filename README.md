@@ -10,7 +10,7 @@ Run the `pattern` deno task to execute any of the patterns from the files.
 
 `deno task pattern abstract-factory-pattern`
 
-_if you don't you have `deno` installed, refer to this [installation guide](https://docs.deno.com/runtime/getting_started/installation/)_
+_if you don't have `deno` installed, refer to this [installation guide](https://docs.deno.com/runtime/getting_started/installation/)_
 
 ## Patterns
 
