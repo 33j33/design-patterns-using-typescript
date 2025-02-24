@@ -16,6 +16,13 @@ This might be most widely used pattern out there.
 3. Cloud SDKs (like AWS SDK) that abstract AWS services
 4. HTTP clients (like Axios) that simplify REST API calls
 
+## Differences with other patterns
+
+**Adapter pattern** wraps over one object. **Facade Pattern** creates a single object to represent a subsystem of multiple objects. **Flyweight Pattern** creates lots of little objects.
+
+**Facade** defines a simplified interface to a subsystem of objects. The subsystem itself is unaware of the facade. **Mediator** facilitate communication between components of the system. The components only know about the mediator object and don’t communicate directly.
+
+
 ## Further Reading
 
 https://refactoring.guru/design-patterns/facade
