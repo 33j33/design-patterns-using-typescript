@@ -3,7 +3,8 @@ export function measure(mode?: "debug") {
   // deno-lint-ignore ban-types
   return function (target: Function, context: ClassMethodDecoratorContext) {
     if (context.kind == "method") {
-      return function (...args: unknown[]) {
+      // the `this` parameter must be the first parameter in the parameter list, and it only exists for type-checking purposes. It gets erased when TypeScript is compiled to JavaScript.
+      return function (this: unknown, ...args: unknown[]) {
         const debug = mode === "debug";
         const name = context.name;
         const start = performance.now();

@@ -101,15 +101,15 @@ export abstract class BaseComponent<P extends object, S extends object> {
   // Hook methods (optional) for client to override and extend the component
   protected componentWillMount(): void {}
   protected componentDidMount(): void {}
-  protected componentWillUpdate(payload: ComponentUpdatePayload<P, S>): void {}
-  protected componentDidUpdate(payload: ComponentUpdatePayload<P, S>): void {}
+  protected componentWillUpdate(_payload: ComponentUpdatePayload<P, S>): void {}
+  protected componentDidUpdate(_payload: ComponentUpdatePayload<P, S>): void {}
   protected componentWillUnmount(): void {}
   protected handleError(error: Error, errorInfo: ErrorInfo): void {
     console.error("Component error:", error);
     console.error("Error info:", errorInfo);
   }
 
-  protected shouldComponentUpdate(nextProps: P, nextState: S): boolean {
+  protected shouldComponentUpdate(_nextProps: P, _nextState: S): boolean {
     return true;
   }
 }
